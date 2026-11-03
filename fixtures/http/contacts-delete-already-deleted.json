@@ -1,0 +1,16 @@
+{
+ "body": {
+  "Code": 1001,
+  "Responses": [
+   {
+    "ID": "GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATE",
+    "Response": {
+     "Code": 1000
+    }
+   }
+  ]
+ },
+ "retryAfter": false,
+ "route": "PUT contacts/v4/contacts/delete",
+ "status": 200
+}

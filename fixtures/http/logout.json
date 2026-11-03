@@ -1,0 +1,8 @@
+{
+  "body": {
+    "Code": 1000
+  },
+  "retryAfter": false,
+  "route": "DELETE core/v4/auth",
+  "status": 200
+}

@@ -1,0 +1,10 @@
+{
+  "body": {
+    "Code": 2064,
+    "Details": {},
+    "Error": "GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERAT"
+  },
+  "retryAfter": false,
+  "route": "POST auth/v4/info",
+  "status": 400
+}

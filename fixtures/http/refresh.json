@@ -1,0 +1,38 @@
+{
+  "body": {
+    "AccessToken": "GENERATED-GENERATED-GENERATED-GE",
+    "Code": 1000,
+    "ExpiresIn": 86399,
+    "LocalID": 0,
+    "RefreshCounter": 0,
+    "RefreshToken": "GENERATED-GENERATED-GENERATED-GE",
+    "Scope": "full self payments keys parent user loggedin nondelinquent mail vpn calendar drive docs pass verified settings wallet lumo meet",
+    "Scopes": [
+      "full",
+      "self",
+      "payments",
+      "keys",
+      "parent",
+      "user",
+      "loggedin",
+      "nondelinquent",
+      "mail",
+      "vpn",
+      "calendar",
+      "drive",
+      "docs",
+      "pass",
+      "verified",
+      "settings",
+      "wallet",
+      "lumo",
+      "meet"
+    ],
+    "TokenType": "Bearer",
+    "UID": "GENERATED-GENERATED-GENERATED-GE",
+    "Uid": "GENERATED-GENERATED-GENERATED-GE"
+  },
+  "retryAfter": false,
+  "route": "POST core/v4/auth/refresh",
+  "status": 200
+}

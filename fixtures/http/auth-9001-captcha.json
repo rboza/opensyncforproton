@@ -1,0 +1,20 @@
+{
+  "body": {
+    "Code": 9001,
+    "Details": {
+      "Description": "",
+      "Direct": 0,
+      "ExpiresAt": 0,
+      "HumanVerificationMethods": [
+        "captcha"
+      ],
+      "HumanVerificationToken": "GENERATED-GENERATED-GENE",
+      "Title": "GENERATED-GENERATE",
+      "WebUrl": "https://verify.proton.me/?methods=captcha\u0026token=GENERATED-GENERATED-GENE"
+    },
+    "Error": "GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERA"
+  },
+  "retryAfter": false,
+  "route": "POST core/v4/auth",
+  "status": 422
+}

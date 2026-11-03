@@ -1,0 +1,217 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "eb5f9f9c24212aa22cd97c112f361b57",
+    "entities": [
+      {
+        "tableName": "account_record",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`account_id` TEXT NOT NULL, `android_account_name` TEXT NOT NULL, `login_state` TEXT NOT NULL, PRIMARY KEY(`account_id`))",
+        "fields": [
+          {
+            "fieldPath": "accountId",
+            "columnName": "account_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "androidAccountName",
+            "columnName": "android_account_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "loginState",
+            "columnName": "login_state",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "account_id"
+          ]
+        }
+      },
+      {
+        "tableName": "settings",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`account_id` TEXT NOT NULL, `sync_mode` TEXT NOT NULL DEFAULT 'DRY_RUN', `interval_minutes` INTEGER DEFAULT 60, PRIMARY KEY(`account_id`))",
+        "fields": [
+          {
+            "fieldPath": "accountId",
+            "columnName": "account_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "syncMode",
+            "columnName": "sync_mode",
+            "affinity": "TEXT",
+            "notNull": true,
+            "defaultValue": "'DRY_RUN'"
+          },
+          {
+            "fieldPath": "intervalMinutes",
+            "columnName": "interval_minutes",
+            "affinity": "INTEGER",
+            "defaultValue": "60"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "account_id"
+          ]
+        }
+      },
+      {
+        "tableName": "last_report",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`account_id` TEXT NOT NULL, `kind` TEXT NOT NULL, `finished_at` INTEGER NOT NULL, `ready` INTEGER NOT NULL, `blocker` TEXT, `new_from_proton` INTEGER NOT NULL, `changed_on_proton` INTEGER NOT NULL, `deleted_on_proton` INTEGER NOT NULL, `new_on_phone` INTEGER NOT NULL, `changed_on_phone` INTEGER NOT NULL, `deleted_on_phone` INTEGER NOT NULL, `conflicts` INTEGER NOT NULL, `bulk_guard_would_stop` INTEGER NOT NULL, `unreadable` INTEGER NOT NULL, `duplicate_rows` INTEGER NOT NULL, `missing_rows` INTEGER NOT NULL, PRIMARY KEY(`account_id`))",
+        "fields": [
+          {
+            "fieldPath": "accountId",
+            "columnName": "account_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kind",
+            "columnName": "kind",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "finishedAt",
+            "columnName": "finished_at",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ready",
+            "columnName": "ready",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "blocker",
+            "columnName": "blocker",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "newFromProton",
+            "columnName": "new_from_proton",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "changedOnProton",
+            "columnName": "changed_on_proton",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "deletedOnProton",
+            "columnName": "deleted_on_proton",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "newOnPhone",
+            "columnName": "new_on_phone",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "changedOnPhone",
+            "columnName": "changed_on_phone",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "deletedOnPhone",
+            "columnName": "deleted_on_phone",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "conflicts",
+            "columnName": "conflicts",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bulkGuardWouldStop",
+            "columnName": "bulk_guard_would_stop",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "unreadable",
+            "columnName": "unreadable",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "duplicateRows",
+            "columnName": "duplicate_rows",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "missingRows",
+            "columnName": "missing_rows",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "account_id"
+          ]
+        }
+      },
+      {
+        "tableName": "contact_map",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`account_id` TEXT NOT NULL, `proton_id` TEXT NOT NULL, `raw_contact_id` INTEGER NOT NULL, `fingerprint` TEXT, PRIMARY KEY(`account_id`, `proton_id`))",
+        "fields": [
+          {
+            "fieldPath": "accountId",
+            "columnName": "account_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "protonId",
+            "columnName": "proton_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rawContactId",
+            "columnName": "raw_contact_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fingerprint",
+            "columnName": "fingerprint",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "account_id",
+            "proton_id"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'eb5f9f9c24212aa22cd97c112f361b57')"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+ "body": {
+  "Code": 2061,
+  "Details": {},
+  "Error": "GENERATED-"
+ },
+ "retryAfter": false,
+ "route": "PUT contacts/v4/contacts/{id}",
+ "status": 400
+}

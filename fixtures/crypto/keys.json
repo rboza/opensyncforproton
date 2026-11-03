@@ -1,0 +1,74 @@
+{
+  "testOnly": true,
+  "comment": "TEST-ONLY data from tools/fixture-gen. Never use these keys or passwords for anything real.",
+  "loginPassword": "test-only pässwörd 1",
+  "keySalts": [
+    {
+      "id": "user-key-1",
+      "keySalt": "Xew2spJzFsLhyME9YGrSzQ=="
+    },
+    {
+      "id": "user-key-2",
+      "keySalt": "heSLxN/xhhAAn4BkKt2SUQ=="
+    },
+    {
+      "id": "address-key-legacy",
+      "keySalt": "qnEiNcjMlP+grWUKINaIMA=="
+    }
+  ],
+  "userKeys": [
+    {
+      "id": "user-key-1",
+      "active": true,
+      "primary": true,
+      "armoredPrivateKey": "-----BEGIN PGP PRIVATE KEY BLOCK-----\n\nxYYEaVW5ABYJKwYBBAHaRw8BAQdAey/ICepUSx85fw2ezRl2iOTkyRtsNk8+wE2T\nJqQULOb+BwMIeqse3U17aIPgnZ9A1i8vxvHqu6qw9hM/idQ8mKORfQGyxuHAJtx0\nzixutCnUoIkkyxUv5YlJX1HyE4dnG0G8gh5XjvsgLwRsBS+5cfIzL80xVGVzdCBP\nbmx5IHVzZXIta2V5LTEgPHVzZXIta2V5LTFAZXhhbXBsZS5pbnZhbGlkPsK/BBMW\nCABxBYJpVbkAAwsJBwkQ2uub/UKc3kA1FAAAAAAAHAAQc2FsdEBub3RhdGlvbnMu\nb3BlbnBncGpzLm9yZ45ZmwDRZacXZYWVWWS/fRMCFQgDFgACAhkBApsDAh4BFiEE\nEhReoct7ACkPlcjH2uub/UKc3kAAAB4KAQDBwHsqXug9BiHHgSyXmP/A18xiLqwV\nrFRo0VRNrVsdzQD+PrWBj4NdhDdRpIDAlWknV1J8gWr3ogPFNJSaBF+usgLHiwRp\nVbkAEgorBgEEAZdVAQUBAQdA84lBkF2GS17eGljkofbT7iipZ1MM+AkWKUE4Mh/A\n7zgDAQoJ/gcDCHqrHt1Ne2iD4HwTTCkPmmsA50PcghGZgTOhk1XNbAuDuYa7Dq2R\nMHZ0HCQJWBaP3hZUJD52fHk7dJgyhOY8mlIZ2V/UOeDGdZdBt9xEelzCrgQYFggA\nYAWCaVW5AAkQ2uub/UKc3kA1FAAAAAAAHAAQc2FsdEBub3RhdGlvbnMub3BlbnBn\ncGpzLm9yZ13Xq4yItybLjmB11OckcNICmwwWIQQSFF6hy3sAKQ+VyMfa65v9Qpze\nQAAAMJkA/3CPde/XadIr4K9e5ZlDgzQt5HI3PUIAXHuJDsVerCTQAQCYyIjJBwII\nOGrf2D0APYRUKKZ4VD8cf4OWl/N+gREmBQ==\n=V7V2\n-----END PGP PRIVATE KEY BLOCK-----"
+    },
+    {
+      "id": "user-key-2",
+      "active": false,
+      "primary": false,
+      "armoredPrivateKey": "-----BEGIN PGP PRIVATE KEY BLOCK-----\n\nxYYEaVW5ABYJKwYBBAHaRw8BAQdAbQVydgFIBooJBMtkdInIn8/XOQ1j4v6B5+5P\na7i/Boj+BwMICNAx9RMlj2/gTQ2Gc/AFt5PpSaFON9siWw4ZgtbsiQ5wPbs1aHav\nzCsp82Mo+PKaKex9MntoIKL87ru3WU7KebprHkJpdZCQOTNwbXkKWs0xVGVzdCBP\nbmx5IHVzZXIta2V5LTIgPHVzZXIta2V5LTJAZXhhbXBsZS5pbnZhbGlkPsK/BBMW\nCABxBYJpVbkAAwsJBwkQmurzQ3OmMFM1FAAAAAAAHAAQc2FsdEBub3RhdGlvbnMu\nb3BlbnBncGpzLm9yZ0/cv9ShVkGsQfr/KDwQ7N4CFQgDFgACAhkBApsDAh4BFiEE\nSG1kvFsmJEfTsW8ImurzQ3OmMFMAAEj2AP94q9h4k3XSbhUO+EZ4N+g4bzKTCl6S\nxlp+v7FKAxSoEAD+LcTrOpUJftjz3VD74KH2N6H22RkzSDAYV5y3RXyyzQjHiwRp\nVbkAEgorBgEEAZdVAQUBAQdAFf4yp48QUJf/Ub+jElhDJ+hqMViBH+UuvC0AsXme\nADIDAQoJ/gcDCAjQMfUTJY9v4OrIasOUgqkS3cHlvDBQyWtNIoKswFs3rsrLxEnv\n/XxkMgbK6PGndUrlJUMta/tSYn0UkO+YtncA49jL9RlVZm6rbxRV78PCrgQYFggA\nYAWCaVW5AAkQmurzQ3OmMFM1FAAAAAAAHAAQc2FsdEBub3RhdGlvbnMub3BlbnBn\ncGpzLm9yZ0q0bDBVSUUK32CKOludtfkCmwwWIQRIbWS8WyYkR9Oxbwia6vNDc6Yw\nUwAAzR4BALyMFgduAfVl8etqxsHtm7NPqJx9Lfx+8SOpTNiosMv+AQDC4v0hi3Lh\n/Eq8+gFTI5dRK4yt5llKpUd1GcTc1o/eBQ==\n=xOkh\n-----END PGP PRIVATE KEY BLOCK-----"
+    }
+  ],
+  "addressKeys": [
+    {
+      "id": "address-key-1",
+      "addressId": "address-1",
+      "form": "token",
+      "active": true,
+      "primary": true,
+      "armoredPrivateKey": "-----BEGIN PGP PRIVATE KEY BLOCK-----\n\nxYYEaVW5ABYJKwYBBAHaRw8BAQdAYoydjbi2C6pPN5JUXuFvNTQaNOsPdi5ALWD3\n20qLw1j+BwMIglpht+jjpbngopya5TkPq35tbdAIjYXYok9w8EgElSAry2NugFSZ\nwJs+ZuB1096o3XthCAbm4j+uI0wnYBnBXc17x2QsVYlhwUwZ+IsNKc03VGVzdCBP\nbmx5IGFkZHJlc3Mta2V5LTEgPGFkZHJlc3Mta2V5LTFAZXhhbXBsZS5pbnZhbGlk\nPsK/BBMWCABxBYJpVbkAAwsJBwkQyjur2uGAq/k1FAAAAAAAHAAQc2FsdEBub3Rh\ndGlvbnMub3BlbnBncGpzLm9yZ8kpa/x9KNvvxltFPZOm1QQCFQgDFgACAhkBApsD\nAh4BFiEEi8Cp0tXbHKjU+VKZyjur2uGAq/kAAA8NAQDrXtZx005vsPgHvSxLVUAj\n1jfICXV6uTevcyGP/sP/xQEAihU+uAB8nvkQ+wXPoXvRTYwHkfg0W4H6H9dana6A\ncgPHiwRpVbkAEgorBgEEAZdVAQUBAQdANzu0rhkxCEZMMKh4iqc37R6siY3FzYmH\nQKna+U4hj3kDAQoJ/gcDCIJaYbfo46W54BkytQ/vEEaTxQL15q6x7CYq8XZs5JwI\n67RYE/ewIfteMCMD9c/DU+LjCiDVg5jjsH0d5AHEOXc6W6SMkGmtYFxbtbY6lXzC\nrgQYFggAYAWCaVW5AAkQyjur2uGAq/k1FAAAAAAAHAAQc2FsdEBub3RhdGlvbnMu\nb3BlbnBncGpzLm9yZyqB9s2OOrIvipoZnrrdPD8CmwwWIQSLwKnS1dscqNT5UpnK\nO6va4YCr+QAA130A/RZc4R0d9XIh/yjiy7dvyoJVBhrFQlnNr0BT0H8xLsriAQD8\n2Gv76bvDVF5cMit0FDB60YysDSMunhwKUbmI1mOuDw==\n=sa/U\n-----END PGP PRIVATE KEY BLOCK-----",
+      "token": "-----BEGIN PGP MESSAGE-----\n\nwV4DIUjDgWYn2tASAQdAQ20cHekxax0w/gmpJSPV7/4YWd9eo/Y6HDbSpP+0aFgw\ntHCFZKxdcW2V4uNtaN7Tu51ad6yrLYDoRKdlG0bhJ/8QnfeNlCEw60Bg9LqhedNB\n0nEBysRQeER8AYg+aQlAwZBRRd1GlLM1P9SvGW9d6p0MEoIpK6W2shnaVaZaSU0x\nPxcUONYj4N4/EFheCHNMLACqXZsJMzQ9lkh6FrqP+D5wKDstdn07hHn0B8E5e925\nWwJPgbW6hOi+WtmSf7H9KoH7BQ==\n=2n3m\n-----END PGP MESSAGE-----",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwqsEARYIAF0FgmlVuQAJENrrm/1CnN5ANRQAAAAAABwAEHNhbHRAbm90YXRpb25z\nLm9wZW5wZ3Bqcy5vcmccqc5um4v3PSRKbnq7GI5yFiEEEhReoct7ACkPlcjH2uub\n/UKc3kAAAKwwAQDF+1oLkl2Z0zs0PRLKSOFBON+QTxNKV3dGpwrm4UjizAEA89b+\nBM8MAROvHx7ITWs/xWP24+s+DsfZARFVBpBLYgc=\n=xUs9\n-----END PGP SIGNATURE-----"
+    },
+    {
+      "id": "address-key-legacy",
+      "addressId": "address-2",
+      "form": "legacy",
+      "active": true,
+      "primary": true,
+      "armoredPrivateKey": "-----BEGIN PGP PRIVATE KEY BLOCK-----\n\nxYYEaVW5ABYJKwYBBAHaRw8BAQdAR0oJWhtK77wtoTxJdlXZKxRYp7HY+SjmUsLD\nGCBNHdP+BwMICJ8WqDShB1DgUUE+FkPAzSEvN/uzUFoaEP9ItokYekXEpDDPYwfj\n6q6fb1WDMqduHTusteLzZNuYjJVcLAUNczpVYistCx1I/A0EV5QVvc1BVGVzdCBP\nbmx5IGFkZHJlc3Mta2V5LWxlZ2FjeSA8YWRkcmVzcy1rZXktbGVnYWN5QGV4YW1w\nbGUuaW52YWxpZD7CvwQTFggAcQWCaVW5AAMLCQcJEDbMxIQy48gFNRQAAAAAABwA\nEHNhbHRAbm90YXRpb25zLm9wZW5wZ3Bqcy5vcmf43pexs331FpyGsR90Znb0AhUI\nAxYAAgIZAQKbAwIeARYhBMnhC/diWHq925LD6TbMxIQy48gFAAD/CgEApH/PuaMV\nF7fM9338c6wvPC2WxmgAbjQasU4WgupBIAwBAIiCPTAjKo7xfqVTzDT+/7PgyLnA\nxuF+TAEgM/5ll4gAx4sEaVW5ABIKKwYBBAGXVQEFAQEHQN+sNQ0iHmPFI0i6goGe\noG6+uKTh4yZ99dQSZ/xWnmhqAwEKCf4HAwgInxaoNKEHUOCmaSapzx4gXI6nrW6L\n4jGp+wPnjQB7NdEinWa4LIZSeUhVaGES2WHXz2NcR3g6QzR6wStI6IOg4c/8NFZk\neWN4VVlpYx27wq4EGBYIAGAFgmlVuQAJEDbMxIQy48gFNRQAAAAAABwAEHNhbHRA\nbm90YXRpb25zLm9wZW5wZ3Bqcy5vcmfwqArbwZ03gvT2IpFrGl9UApsMFiEEyeEL\n92JYer3bksPpNszEhDLjyAUAAHy3AP9y/q7WKYI/wN2TqiI85tb20zz+PO6YgH7u\nrh4eOeRTPQEA8C3c8iR85LApx2JbnLVbMGwgdkRHKC5CzJYA6iEL6go=\n=J7MH\n-----END PGP PRIVATE KEY BLOCK-----"
+    }
+  ],
+  "brokenAddressKeys": [
+    {
+      "id": "broken-token_without_signature",
+      "case": "token_without_signature",
+      "armoredPrivateKey": "-----BEGIN PGP PRIVATE KEY BLOCK-----\n\nxYYEaVW5ABYJKwYBBAHaRw8BAQdAFCwHHbK9lyg3n1eRYJTNAzcg69ghYvKETii7\npleToWz+BwMIzw8ZJ77Scf7gOUKhhQg5twoUpUeboE9mzNf3xsxvkLJBC02wdODW\narJTFzuqR56s+NVdGLUwFWjRZD/7S4gMCXNNhZjBvIwAj5FvZJ/T/c1ZVGVzdCBP\nbmx5IGJyb2tlbi10b2tlbl93aXRob3V0X3NpZ25hdHVyZSA8YnJva2VuLXRva2Vu\nX3dpdGhvdXRfc2lnbmF0dXJlQGV4YW1wbGUuaW52YWxpZD7CvwQTFggAcQWCaVW5\nAAMLCQcJENW/cID6fVMvNRQAAAAAABwAEHNhbHRAbm90YXRpb25zLm9wZW5wZ3Bq\ncy5vcmfFDY/4NFIasYIoXe5BYO5kAhUIAxYAAgIZAQKbAwIeARYhBE8MceVL2DFH\nYH56wdW/cID6fVMvAACtMAEA1No0GZ0ULS66ZYTs1HyjzfuZQkatEtrsIcy10RHS\nVpAA/2dqRYiZ8/d9FZ4ss7P4AkcfWVb7q89Dgmwz/2DE3UAEx4sEaVW5ABIKKwYB\nBAGXVQEFAQEHQHE4nLjUQIQpESiSU/nJskvKloJn7+fBhB1hvIrOe1lFAwEKCf4H\nAwjPDxknvtJx/uA6rmoZ8+0k6eKAAE7FjWJMfRJGyL4FNB9w1d9wXVRlndvzlAHO\nSMtn1j4ojgIJ+9z7dut/qgInN2/SfcpIMVvZ/hvkjZCrwq4EGBYIAGAFgmlVuQAJ\nENW/cID6fVMvNRQAAAAAABwAEHNhbHRAbm90YXRpb25zLm9wZW5wZ3Bqcy5vcmfP\nyBrxLDVpL2qyrBx9DSGdApsMFiEETwxx5UvYMUdgfnrB1b9wgPp9Uy8AAJ8yAP42\nlQ79A0Pv5ULgfN6nkd1xicmX4SiIgMt43DacjybxAwEAiRyYSi6GwIpyv6Z0PMTI\nLEFuyDdhCartBm3qdO2GnQ4=\n=jz5j\n-----END PGP PRIVATE KEY BLOCK-----",
+      "token": "-----BEGIN PGP MESSAGE-----\n\nwV4DIUjDgWYn2tASAQdA6Ksuoe0IP0sN1nY8WLoq4wxwXINA0zmCI9ULDO2+8Www\niJCNRZyDh0l9yhh81nCrwNZaX1LI0ic6l8SVSU/ZQNb67DSnvLymErxTh5uTd+Dt\n0nEBJwi5hOcHTKAyIuJFrkaRcQqOUACWZyWyhknRl/65B7+acvO25oYmU/ILZmdL\n/QhKtdSnuGJRX96Ja5lWoeTvgxHyp0/IFHnf0DTo0XqurZZEMUQcrZhjNyBrUSQH\nLcDpDs0tzLpBP8L0Hj9luAU24g==\n=NfHq\n-----END PGP MESSAGE-----"
+    },
+    {
+      "id": "broken-signature_without_token",
+      "case": "signature_without_token",
+      "armoredPrivateKey": "-----BEGIN PGP PRIVATE KEY BLOCK-----\n\nxYYEaVW5ABYJKwYBBAHaRw8BAQdAc0Fsq3Z5OKp9FeVaHeuoy99Y0iorAW9NlL0Y\nDCo3Vk/+BwMI5wU/i0bV0PLgBphNsO3TQ3rR53zQBUPJF6to790IQpKgBj78ZoT3\noWDtgCqho34EllP7yjV623+m8nuBeJXyCCmQIe3V3nJdCVVopH9GDM1ZVGVzdCBP\nbmx5IGJyb2tlbi1zaWduYXR1cmVfd2l0aG91dF90b2tlbiA8YnJva2VuLXNpZ25h\ndHVyZV93aXRob3V0X3Rva2VuQGV4YW1wbGUuaW52YWxpZD7CvwQTFggAcQWCaVW5\nAAMLCQcJEMuanEuKHfJTNRQAAAAAABwAEHNhbHRAbm90YXRpb25zLm9wZW5wZ3Bq\ncy5vcmeVmXYtLr0uJfFpUzLClWNKAhUIAxYAAgIZAQKbAwIeARYhBDgZJQBAOPqT\n+6xRPsuanEuKHfJTAAAiIAD+M/3pNpwdBm6GFWBnbuXNqooThDHfNDaWtTzbuv07\nNHEBAMtSXVl/osJnKiMgdLRc6WZEYyh4UgwC3YHQM6XQCosFx4sEaVW5ABIKKwYB\nBAGXVQEFAQEHQK3eXjClTj+fuevjtnd02gs1lG2JTm/YbspO3PsmrSkJAwEKCf4H\nAwjnBT+LRtXQ8uBYeE/JND7NNk44PxJxRtsOcuAQoLzh6oYYwMFA8/g0v+r0kZyg\nooCavXQu6dFuWdUZ0mU6xzrILewZCsP7VX8Mr//AWkoswq4EGBYIAGAFgmlVuQAJ\nEMuanEuKHfJTNRQAAAAAABwAEHNhbHRAbm90YXRpb25zLm9wZW5wZ3Bqcy5vcmfr\nYlYuanEqraZyLgi7JSe3ApsMFiEEOBklAEA4+pP7rFE+y5qcS4od8lMAAATqAP43\nr9ZkEDRCjEA44L3txu+u0eKenJSqiNAavzJWULeZfQD+OxyXIOChaggby3IROHVw\nhNiHV7m+1p1yU5ymmRua6Ag=\n=/KB7\n-----END PGP PRIVATE KEY BLOCK-----",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwqsEARYIAF0FgmlVuQAJENrrm/1CnN5ANRQAAAAAABwAEHNhbHRAbm90YXRpb25z\nLm9wZW5wZ3Bqcy5vcmehSgLG6mtEvQ7vXSeOedUbFiEEEhReoct7ACkPlcjH2uub\n/UKc3kAAAKm0AQDBjxMWhU8jp3R4mbf5gPPKOMLd0NaJ2QcFCoKq4ElFJwD9G4Op\nzuUecw550yanPNKnBze0jwZErURf0BmCzN4aYAI=\n=rHMs\n-----END PGP SIGNATURE-----"
+    },
+    {
+      "id": "broken-signature_over_other_token",
+      "case": "signature_over_other_token",
+      "armoredPrivateKey": "-----BEGIN PGP PRIVATE KEY BLOCK-----\n\nxYYEaVW5ABYJKwYBBAHaRw8BAQdAQmW6nyFUWYMvdCePsIWWXOyzbaAL7BWhvI8A\nluFd7Dv+BwMIq9MpwWUkInfgp03VMAIkLoINP5Zd9d3emBh1A0Q9/si4XtBbG7e7\n6vUppwQj9EWuDagxcmfI9xh021YSWNMhLA11cdRBpn4s93TnTBEuaM1fVGVzdCBP\nbmx5IGJyb2tlbi1zaWduYXR1cmVfb3Zlcl9vdGhlcl90b2tlbiA8YnJva2VuLXNp\nZ25hdHVyZV9vdmVyX290aGVyX3Rva2VuQGV4YW1wbGUuaW52YWxpZD7CvwQTFggA\ncQWCaVW5AAMLCQcJEAkjZtcFJmTRNRQAAAAAABwAEHNhbHRAbm90YXRpb25zLm9w\nZW5wZ3Bqcy5vcmfCeR3ktBQEvi9cQiE3lTaeAhUIAxYAAgIZAQKbAwIeARYhBOu3\nRN/g+S9NsXtJPQkjZtcFJmTRAAAh5AD/fLQvszVeer9D5FGn1kPldsht1he03u9c\nryKPjidMDrUA/1BFXAqo5QHI7aHYle6wcIbTPX+sHCLfmm6ENoAhSB8Dx4sEaVW5\nABIKKwYBBAGXVQEFAQEHQGZcNUX0mvobrJbTFVFos3SWxEsT8VzNKCA9J1calMJ6\nAwEKCf4HAwir0ynBZSQid+A6qFCFwtzeUT/NNtuyo6EifmtBi9nNSdCBkYoK0rwe\nmDvroZ37I0mq04rNWPdliob8gzzHDs0ouhL+3RSx7gQsHTSVKMBAwq4EGBYIAGAF\ngmlVuQAJEAkjZtcFJmTRNRQAAAAAABwAEHNhbHRAbm90YXRpb25zLm9wZW5wZ3Bq\ncy5vcmcj7RZauXjDFFyjwo51PDHqApsMFiEE67dE3+D5L02xe0k9CSNm1wUmZNEA\nALq7AP9hlIXdnoeqkgSykbA8YU9qtFekD0M4bavrTdiE8USfGgEAgHMwxCHHpVVC\nIDGGQVH43JGgA9P/4llN+DO3Q2W9wQM=\n=LnzQ\n-----END PGP PRIVATE KEY BLOCK-----",
+      "token": "-----BEGIN PGP MESSAGE-----\n\nwV4DIUjDgWYn2tASAQdAh+OOz1HG5JwKi4xm6P/uZgcdIJcfBZAeIhPKDn99P3Mw\n4EMe4uK6Vd4rONHuHSAr8KKH4d1O6khGMq5iwJBC6c7C0bhk6D2FloqmYEpg8XM6\n0nEBIybw3u2huvuXG0XE3+pp2qfdn6I1S4TY+LGssKTo4wa7lkagW761LR/Cra+d\nudjQtSNXCsZkjhJM51ULLQ6k2nh8qCqZKXmetUD9cy+bOBa797/VetJd69MLOxLN\nrKGjworL5yXiwnv2FjJf0raR4w==\n=IE0K\n-----END PGP MESSAGE-----",
+      "signature": "-----BEGIN PGP SIGNATURE-----\n\nwqsEARYIAF0FgmlVuQAJENrrm/1CnN5ANRQAAAAAABwAEHNhbHRAbm90YXRpb25z\nLm9wZW5wZ3Bqcy5vcmeKvhoXGPt9futSbRUjysDvFiEEEhReoct7ACkPlcjH2uub\n/UKc3kAAAOqIAP40/qrkQW0jybVx7xcq+EU7NCahfKp+ydmEgJdtCn9G2gD/fDml\nptYfXHC4fucXm7JA022DJ3j89YM5Mcrrs6klyA8=\n=bsiC\n-----END PGP SIGNATURE-----"
+    }
+  ]
+}

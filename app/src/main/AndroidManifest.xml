@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- The periodic job reads Android's sync switches; the scheduler and the SyncAdapter set the contacts authority's
+         syncable state and automatic sync. -->
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+
+    <!-- The account's contacts: read for every run, written by a real sync; requested before sync is turned on. -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <!-- The "Sync problems" notifications, asked for once sync is on; declining changes nothing else. -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- WorkManager's: the app never runs a foreground service (D20). -->
+    <uses-permission
+        android:name="android.permission.FOREGROUND_SERVICE"
+        tools:node="remove" />
+
+    <!-- Checked against app/build.gradle.kts's list (docs/architecture.md § Security). -->
+    <application
+        android:name=".OspApp"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:memtagMode="sync"
+        android:networkSecurityConfig="@xml/network_security_config">
+
+        <!-- The one activity, the launcher's. -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/launcher_label"
+            android:theme="@style/Theme.Osp"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- The account authenticator: exported, but only Android binds it, as only Android holds ACCOUNT_MANAGER. -->
+        <service
+            android:name=".AuthenticatorService"
+            android:exported="true"
+            android:permission="android.permission.ACCOUNT_MANAGER">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+
+        <!-- The contacts sync adapter: exported, but only Android binds it, as only Android holds ACCOUNT_MANAGER. The
+             Contacts app reads contacts.xml from this service's meta-data only. -->
+        <service
+            android:name=".ContactsSyncService"
+            android:exported="true"
+            android:permission="android.permission.ACCOUNT_MANAGER">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/sync_contacts" />
+            <meta-data
+                android:name="android.provider.CONTACTS_STRUCTURE"
+                android:resource="@xml/contacts" />
+        </service>
+
+        <!-- ACCOUNT_REMOVED is a protected broadcast only Android sends; the receiver starts reconciliation and nothing
+             else (docs/sync.md § Account states). -->
+        <receiver
+            android:name=".AccountRemovedReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.accounts.action.ACCOUNT_REMOVED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- OkHttp 5 adds AndroidX Startup's provider only to hand itself the app context, which it uses for the
+             public-suffix list (cookie domains); this app sends no cookies. Removed so the manifest gains no component;
+             the composition root calls OkHttp.initialize(context) instead. -->
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            tools:node="remove" />
+
+        <!-- Library entries the app doesn't use: WorkManager's foreground service and its DUMP-protected diagnostics
+             receiver, and ProfileInstaller's DUMP-protected receiver, which arrives through lifecycle-runtime. -->
+        <service
+            android:name="androidx.work.impl.foreground.SystemForegroundService"
+            tools:node="remove" />
+        <receiver
+            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+            tools:node="remove" />
+        <receiver
+            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+            tools:node="remove" />
+
+        <!-- Optional phone-maker window extensions (foldables) that Compose's androidx.window asks for; it copes
+             without them, and the app has no foldable layout. -->
+        <uses-library
+            android:name="androidx.window.extensions"
+            tools:node="remove" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            tools:node="remove" />
+    </application>
+
+</manifest>

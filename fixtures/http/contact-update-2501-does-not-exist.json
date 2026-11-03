@@ -1,0 +1,10 @@
+{
+ "body": {
+  "Code": 2501,
+  "Details": {},
+  "Error": "GENERATED-GENERATED-GE"
+ },
+ "retryAfter": false,
+ "route": "PUT contacts/v4/contacts/{id}",
+ "status": 422
+}

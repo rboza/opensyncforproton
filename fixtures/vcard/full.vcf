@@ -1,0 +1,40 @@
+BEGIN:VCARD
+VERSION:4.0
+PRODID:-//OpenSync for Proton//test fixture//EN
+UID:urn:uuid:5f0c1b1e-0000-4000-8000-000000000001
+FN:Ada Lovelace
+item1.EMAIL;TYPE=work;PREF=1:ada@example.org
+item1.X-PM-ENCRYPT:false
+item1.X-PM-SIGN:true
+END:VCARD
+BEGIN:VCARD
+VERSION:4.0
+UID:urn:uuid:5f0c1b1e-0000-4000-8000-000000000001
+N:Lovelace;Ada;Augusta;Hon.;
+X-PHONETIC-FIRST-NAME:AY-duh
+X-PHONETIC-LAST-NAME:LUV-lace
+EMAIL;TYPE=home:ada.home@example.org
+TEL;TYPE=cell:+44 20 7946 0000
+TEL;TYPE=fax,home:+44 20 7946 0001
+TEL;TYPE=x-lab:+44 20 7946 0002
+ADR;TYPE=home:;;1 Example Row;London;;EX1 1AA;United Kingdom
+ORG:Analytical Engines;Research
+TITLE:Countess
+ROLE:Mathematician
+PHOTO:data:image/jpeg;base64,/9j/4AAQ
+BDAY:18151210
+ANNIVERSARY:18350708
+item2.X-ABDATE:18430101
+item2.X-ABLabel:Notes published
+NOTE:Wrote the first published algorithm.
+URL:https://example.org/ada
+NICKNAME:Enchantress of Numbers
+RELATED;TYPE=spouse;VALUE=text:William King
+RELATED;X-ANDROID-TYPE=assistant;VALUE=text:Charles Babbage
+X-SIP:sip:ada@example.org
+CATEGORIES:Mathematicians
+IMPP:xmpp:ada@example.org
+KEY;VALUE=uri:https://example.org/ada.asc
+GENDER:F
+REV:20260930T000000Z
+END:VCARD

@@ -1,0 +1,18 @@
+{
+ "body": {
+  "Code": 1001,
+  "Responses": [
+   {
+    "Index": 0,
+    "Response": {
+     "Code": 2500,
+     "Details": {},
+     "Error": "GENERATED-GENERATED-GE"
+    }
+   }
+  ]
+ },
+ "retryAfter": false,
+ "route": "POST contacts/v4/contacts",
+ "status": 200
+}

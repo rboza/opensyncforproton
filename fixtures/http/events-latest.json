@@ -1,0 +1,9 @@
+{
+ "body": {
+  "Code": 1000,
+  "EventID": "GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATE"
+ },
+ "retryAfter": false,
+ "route": "GET core/v4/events/latest",
+ "status": 200
+}

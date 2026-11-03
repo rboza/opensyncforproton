@@ -1,0 +1,10 @@
+{
+  "body": {
+    "Code": 12087,
+    "Details": {},
+    "Error": "GENERATED-GENERATED-GENER"
+  },
+  "retryAfter": false,
+  "route": "POST core/v4/auth",
+  "status": 422
+}

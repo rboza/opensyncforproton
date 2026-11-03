@@ -1,0 +1,30 @@
+{
+  "body": {
+    "Code": 1000,
+    "Scope": "full self payments keys parent user loggedin nondelinquent mail vpn calendar drive docs pass verified settings wallet lumo meet",
+    "Scopes": [
+      "full",
+      "self",
+      "payments",
+      "keys",
+      "parent",
+      "user",
+      "loggedin",
+      "nondelinquent",
+      "mail",
+      "vpn",
+      "calendar",
+      "drive",
+      "docs",
+      "pass",
+      "verified",
+      "settings",
+      "wallet",
+      "lumo",
+      "meet"
+    ]
+  },
+  "retryAfter": false,
+  "route": "POST core/v4/auth/2fa",
+  "status": 200
+}

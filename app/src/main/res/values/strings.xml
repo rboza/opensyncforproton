@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OpenSync for Proton</string>
+    <!-- The launcher activity's own label. -->
+    <string name="launcher_label">OSP</string>
+
+    <!-- The login screen. -->
+    <string name="login_notice">OpenSync for Proton is a third-party app, not made or supported by Proton.</string>
+    <string name="login_title">Log in to Proton</string>
+    <string name="login_username">Proton username or e-mail</string>
+    <string name="login_password">Password</string>
+    <string name="login_submit">Log in</string>
+    <string name="login_continue">Continue</string>
+    <string name="login_cancel">Cancel</string>
+    <string name="login_close">Close</string>
+    <string name="login_ok">OK</string>
+    <string name="login_try_again">Try again</string>
+    <string name="login_empty_input">Fill in every field first.</string>
+    <string name="login_totp_prompt">Enter the six-digit code from your authenticator app.</string>
+    <string name="login_totp_label">Code</string>
+    <string name="login_totp_wrong">That code didn\'t work. Try the current one.</string>
+    <string name="login_mailbox_prompt">This account has a second password for its mailbox. Enter it to unlock your keys.</string>
+    <string name="login_mailbox_label">Mailbox password</string>
+    <string name="login_mailbox_wrong">That mailbox password didn\'t unlock your keys.</string>
+    <string name="login_captcha_prompt">Proton asks you to solve a captcha before it lets you in.</string>
+    <string name="login_captcha_load_failed">Couldn\'t load Proton\'s verification page.</string>
+    <string name="login_captcha_reload">Reload</string>
+    <string name="login_captcha_update_webview">Proton\'s captcha needs a newer Android System WebView. Update it, then try again.</string>
+    <string name="login_stopped">Something went wrong on this phone, so the login stopped. Try again.</string>
+    <string name="login_working">Logging in…</string>
+    <string name="login_saving">Saving the login on this phone…</string>
+    <string name="login_done_new">Signed in. Contacts stay in dry run until you turn sync on.</string>
+    <string name="login_done_resumed">Signed in again. Your contacts and settings were kept.</string>
+    <string name="login_refused_other_account">Another Proton account is set up on this phone (signed in, or its session expired). Log out of it first.</string>
+    <string name="login_refused_name_in_use">Android didn\'t add the account: this phone already has one with that name for this app, or refused it.</string>
+    <string name="login_failed_not_saved">Proton accepted the login, but it couldn\'t be saved on this phone. Try again.</string>
+    <string name="login_failed_refused">Proton refused the login. Check the username and password.</string>
+    <string name="login_failed_server_not_trusted">The server couldn\'t prove it\'s Proton, so the login stopped.</string>
+    <string name="login_failed_fido_only">This account only allows security keys, which this app doesn\'t support.</string>
+    <string name="login_failed_two_fa_unsupported">This account\'s second step isn\'t supported. Only a six-digit code from an authenticator app is.</string>
+    <string name="login_failed_password_mode">This account\'s password setup isn\'t supported.</string>
+    <string name="login_failed_verify_in_web_app">Proton wants you to verify this login in a way only its web app offers. Logging in once at proton.me may clear it.</string>
+    <string name="login_failed_captcha_url">The verification page sent wasn\'t at a Proton address, so it wasn\'t opened.</string>
+    <string name="login_failed_captcha_token">The verification page\'s answer couldn\'t be used. Try logging in again.</string>
+    <string name="login_failed_key_newer">Your account uses a newer kind of key that this app can\'t use yet.</string>
+    <string name="login_failed_key_unsupported">Your keys couldn\'t be unlocked with what this app supports.</string>
+    <string name="login_failed_key_corrupt">Your keys look damaged, or their signature didn\'t check out.</string>
+    <string name="login_failed_rate_limited">Proton asks you to wait before trying again.</string>
+    <string name="login_failed_network">Couldn\'t reach Proton. Check the connection and try again.</string>
+    <string name="login_failed_app_version">Proton no longer accepts this version of the app.</string>
+    <string name="login_failed_server_error">Proton had a problem. Try again later.</string>
+    <!-- Where the typed password goes, and the password field's eye. -->
+    <string name="login_reassurance">Your password is used only on this phone to log in and unlock your keys. Nothing you type is saved.</string>
+    <string name="login_show">Show password</string>
+    <string name="login_hide">Hide password</string>
+    <!-- The main screen. -->
+    <string name="main_not_signed_in">Not signed in.</string>
+    <string name="main_signed_out">%s: signed out. Log in to resume.</string>
+    <string name="main_session_expired">%s: the session expired. Log in to resume.</string>
+    <string name="main_log_in">Log in</string>
+    <!-- The account card: its state, and the mode's chip. -->
+    <string name="main_state_signed_in">Signed in</string>
+    <string name="main_state_signed_out">Signed out</string>
+    <string name="main_state_session_expired">Session expired</string>
+    <string name="main_chip_on">Sync on</string>
+    <string name="main_chip_dry_run">Dry run</string>
+    <string name="main_chip_paused">Paused</string>
+    <string name="main_keys_log_in">Your keys don\'t unlock. Log in again to unlock them.</string>
+    <!-- The timing in one line, with sync on. -->
+    <string name="main_timing">Full sync %1$s · checks Proton %2$s</string>
+    <string name="main_timing_same">Full sync %s</string>
+    <string name="main_timing_manual">Manual: only Sync now syncs</string>
+    <plurals name="main_every_minutes">
+        <item quantity="one">every %d minute</item>
+        <item quantity="other">every %d minutes</item>
+    </plurals>
+    <plurals name="main_every_hours">
+        <item quantity="one">every hour</item>
+        <item quantity="other">every %d hours</item>
+    </plurals>
+    <string name="main_mode_dry_run">Dry run: Sync now only checks what a sync would do. Nothing is written.</string>
+    <string name="main_android_sync_on_manual">Android\'s automatic sync is on for this account, so Android may also sync it on its own schedule while the interval is Manual. To stop that, turn off Contacts in the account\'s sync settings in Android.</string>
+    <string name="main_android_sync_off">Android\'s automatic sync is off, so scheduled syncs don\'t run. Sync now still works.</string>
+    <string name="main_switch">Sync contacts with Proton</string>
+    <string name="main_asking_permission">Asking for the contacts permission…</string>
+    <string name="main_permission_needed">Sync needs the contacts permission. Nothing changed.</string>
+    <string name="main_open_app_settings">Open app settings</string>
+    <string name="main_permission_revoked">Sync is paused: the contacts permission was revoked. Nothing was deleted.</string>
+    <string name="main_grant">Grant</string>
+    <string name="main_checking">Checking what a sync would do…</string>
+    <string name="main_start_syncing">Start syncing?</string>
+    <string name="main_start_syncing_detail">This check is what the first sync will do: changes from Proton are written to this phone, and this phone\'s changes, deletions included, are sent to Proton. Later syncs do the same.</string>
+    <string name="main_start">Start</string>
+    <string name="main_nothing_to_change">Nothing to change.</string>
+    <string name="main_not_ready_to_start">Sync stays in dry run: the check below isn\'t ready.</string>
+    <string name="main_starting">Turning sync on…</string>
+    <string name="main_stopping">Turning sync off…</string>
+    <string name="main_mode_failed">Couldn\'t change the mode.</string>
+    <string name="main_read_failed">Couldn\'t read the app\'s state. What\'s shown may be out of date.</string>
+    <string name="main_sync_now">Sync now</string>
+    <string name="main_running">Syncing…</string>
+    <string name="main_didnt_run">Nothing ran: the account changed meanwhile.</string>
+    <string name="main_failed">The sync failed. Try again later.</string>
+    <string name="main_report_dry_run">Last dry run: %s</string>
+    <string name="main_report_sync">Last sync: %s</string>
+    <!-- The report as the latest known state: what started the sync. -->
+    <string name="main_report_sync_started">Last sync: %1$s · %2$s</string>
+    <string name="main_trigger_sync_now">Sync now</string>
+    <string name="main_trigger_start">sync turned on</string>
+    <string name="main_trigger_android_settings">Android Settings</string>
+    <string name="main_trigger_import">import from this phone</string>
+    <string name="main_trigger_proton_changes">changes on Proton</string>
+    <string name="main_trigger_scheduled">scheduled full sync</string>
+    <string name="main_trigger_phone_changes">changes on this phone</string>
+    <string name="main_trigger_check_quiet">checked Proton: no changes</string>
+    <string name="main_trigger_check">Proton check</string>
+    <!-- A side the latest run didn't count: its lines are greyed. -->
+    <string name="main_report_proton_side_from">Proton\'s side: from the full sync at %s</string>
+    <string name="main_report_proton_side_not_counted">Proton\'s side: not counted by a sync yet</string>
+    <string name="main_report_phone_side_from">This phone\'s side: from %s</string>
+    <string name="main_report_phone_side_not_counted">This phone\'s side: not counted by a sync yet</string>
+    <string name="main_line_not_counted">%1$s: not counted yet</string>
+    <!-- What TalkBack reads for a greyed line, and for one that still needs the user. -->
+    <string name="main_line_from">%1$s, from %2$s</string>
+    <string name="main_line_waiting">%1$s, from %2$s, still needs you</string>
+    <string name="main_ready">Ready to sync.</string>
+    <string name="main_not_ready">Not ready: %s</string>
+    <string name="main_sync_stopped">The sync didn\'t finish: %s</string>
+    <!-- The phone direction of the bulk guard (docs/sync.md § Deletion). -->
+    <plurals name="main_phone_guard_stopped">
+        <item quantity="one">Sync stopped before deleting %d contact on Proton that was deleted on this phone.</item>
+        <item quantity="other">Sync stopped before deleting %d contacts on Proton that were deleted on this phone.</item>
+    </plurals>
+    <plurals name="main_phone_guard_would_stop">
+        <item quantity="one">Sync would stop and ask before deleting %d contact on Proton that was deleted on this phone.</item>
+        <item quantity="other">Sync would stop and ask before deleting %d contacts on Proton that were deleted on this phone.</item>
+    </plurals>
+    <string name="main_phone_guard_stopped_unknown">Sync stopped before deleting contacts on Proton that were deleted on this phone. Tap Sync now to see how many.</string>
+    <string name="main_phone_guard_would_stop_unknown">Sync would stop and ask before deleting contacts on Proton that were deleted on this phone. Tap Sync now to see how many.</string>
+    <plurals name="main_phone_guard_delete">
+        <item quantity="one">Delete %d on Proton</item>
+        <item quantity="other">Delete %d on Proton</item>
+    </plurals>
+    <plurals name="main_phone_guard_question">
+        <item quantity="one">Delete %d contact on Proton?</item>
+        <item quantity="other">Delete %d contacts on Proton?</item>
+    </plurals>
+    <string name="main_phone_guard_question_detail">They were deleted on this phone. Any changed on Proton since stay held.</string>
+    <!-- The other direction: deletions on Proton reaching this phone. -->
+    <plurals name="main_remote_guard_stopped">
+        <item quantity="one">Sync stopped before deleting %d contact on this phone that was deleted on Proton.</item>
+        <item quantity="other">Sync stopped before deleting %d contacts on this phone that were deleted on Proton.</item>
+    </plurals>
+    <plurals name="main_remote_guard_would_stop">
+        <item quantity="one">Sync would stop and ask before deleting %d contact on this phone that was deleted on Proton.</item>
+        <item quantity="other">Sync would stop and ask before deleting %d contacts on this phone that were deleted on Proton.</item>
+    </plurals>
+    <string name="main_remote_guard_stopped_unknown">Sync stopped before deleting contacts on this phone that were deleted on Proton. Tap Sync now to see how many.</string>
+    <string name="main_remote_guard_would_stop_unknown">Sync would stop and ask before deleting contacts on this phone that were deleted on Proton. Tap Sync now to see how many.</string>
+    <plurals name="main_remote_guard_delete">
+        <item quantity="one">Delete %d on this phone</item>
+        <item quantity="other">Delete %d on this phone</item>
+    </plurals>
+    <plurals name="main_remote_guard_question">
+        <item quantity="one">Delete %d contact on this phone?</item>
+        <item quantity="other">Delete %d contacts on this phone?</item>
+    </plurals>
+    <string name="main_remote_guard_question_detail">They were deleted on Proton. Any changed on this phone since stay held.</string>
+    <string name="main_delete">Delete</string>
+    <!-- The held list: the phone side alone, never what Proton did. -->
+    <string name="main_held_title">Held contacts (%d)</string>
+    <string name="main_held_intro">Sync leaves these alone until you choose. A choice is carried out at the next sync.</string>
+    <string name="main_held_changed_here">Changed on this phone. Proton\'s copy differs or is gone.</string>
+    <string name="main_held_not_changed_here">Not changed on this phone. Proton\'s copy differs or is gone.</string>
+    <string name="main_held_deleted_here">Deleted on this phone. Proton\'s copy differs or is gone.</string>
+    <string name="main_held_edited_before_keys">Changed on this phone before sync could pair its fields with Proton\'s.</string>
+    <string name="main_held_gone_here">Gone from this phone. Its map says it was here.</string>
+    <string name="main_held_chosen">Chosen: %1$s, at the next sync.</string>
+    <string name="main_held_choice_changed">This contact changed since it was shown; choose again.</string>
+    <string name="main_held_choice_failed">Saving the choice failed.</string>
+    <string name="main_use_phone">Use phone</string>
+    <string name="main_use_proton">Use Proton</string>
+    <string name="main_restore_here">Restore here</string>
+    <string name="main_skip">Skip</string>
+    <string name="main_names_hint">Tap Sync now to see the names.</string>
+    <!-- Counts of changes already synced, whose names Sync now can't show again. -->
+    <string name="main_names_not_kept">Names aren\'t kept for contacts already synced.</string>
+    <string name="main_no_name">(no name)</string>
+    <!-- A name under "Can't be synced", then why. -->
+    <string name="main_name_reason">%1$s: %2$s</string>
+    <string name="main_reason_decrypt">can\'t be decrypted with your keys</string>
+    <string name="main_reason_verify">its signature doesn\'t verify</string>
+    <string name="main_reason_parse">its cards can\'t be read</string>
+    <string name="main_reason_unmapped_rows">another app added fields this app can\'t upload</string>
+    <string name="main_reason_write_too_large">too large for the phone</string>
+    <string name="main_reason_value_rejected">the phone refused a value</string>
+    <string name="main_reason_photo_malformed">its photo isn\'t an image the phone can read</string>
+    <string name="main_reason_photo_oversized">its photo is too large</string>
+    <string name="main_reason_photo_unreadable">its photo on the phone can\'t be read</string>
+    <string name="main_reason_unkeyed_property">Proton holds an edited field in a form this app can\'t edit</string>
+    <string name="main_reason_unwritable_label">a label Proton can\'t store</string>
+    <string name="main_reason_no_name_or_email">add a name or e-mail</string>
+    <string name="main_reason_unencrypted_property">re-save it once in Proton\'s web app</string>
+    <string name="main_reason_encrypt_failed">couldn\'t encrypt it with your Proton key</string>
+    <string name="main_reason_no_primary_key">your Proton account has no single primary key</string>
+    <string name="main_reason_proton_refused">Proton refused the change</string>
+    <string name="main_reason_remote_unreadable">Proton\'s copy can\'t be read</string>
+    <string name="main_reason_uid_unconfirmed">Proton can\'t confirm it was added</string>
+    <string name="main_line_count">%1$s: %2$d</string>
+    <!-- The report's groups. -->
+    <string name="main_from_proton">From Proton</string>
+    <string name="main_from_phone">From this phone</string>
+    <string name="main_needs_look">Needs a look</string>
+    <string name="main_upgrade_notice">This update switched sync back to dry run: this version also sends phone changes to Proton. Turn sync on to check what it would send first.</string>
+    <string name="main_dismiss">Dismiss</string>
+    <string name="main_held">held</string>
+    <string name="main_line_new_from_proton">New on Proton</string>
+    <string name="main_line_changed_on_proton">Changed on Proton</string>
+    <string name="main_line_deleted_on_proton">Deleted on Proton</string>
+    <string name="main_line_new_on_phone">New on the phone</string>
+    <string name="main_line_changed_on_phone">Changed on the phone</string>
+    <string name="main_line_deleted_on_phone">Deleted on the phone</string>
+    <string name="main_line_conflicts">Changed on both sides</string>
+    <string name="main_line_cant_be_synced">Can\'t be synced</string>
+    <string name="main_line_duplicate_rows">Duplicate rows</string>
+    <string name="main_line_missing_rows">Missing rows</string>
+    <string name="main_blocker_offline">the phone is offline.</string>
+    <string name="main_blocker_signed_out">signed out.</string>
+    <string name="main_blocker_session_expired">the session expired.</string>
+    <string name="main_blocker_permission_missing">the contacts permission is missing.</string>
+    <string name="main_blocker_contacts_hidden">contacts are hidden from the app (Contact Scopes?).</string>
+    <string name="main_blocker_keys_dont_unlock">your keys don\'t unlock. Log in again to unlock them.</string>
+    <string name="main_blocker_captcha">Proton asks for a captcha.</string>
+    <string name="main_blocker_proton_unavailable">Proton is unavailable for now.</string>
+    <string name="main_blocker_inventory_incomplete">Proton\'s contact list came back incomplete.</string>
+    <string name="main_blocker_app_version_rejected">Proton no longer accepts this version of the app.</string>
+    <string name="main_blocker_contacts_unavailable">the phone\'s contacts storage isn\'t answering.</string>
+    <string name="main_settings">Settings</string>
+
+    <!-- The settings screen. -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_back">Back</string>
+    <string name="settings_account">Account</string>
+    <string name="settings_diagnostics">Diagnostics</string>
+    <string name="settings_working">Working…</string>
+    <!-- The timing. -->
+    <string name="settings_timing">Sync timing (with sync on)</string>
+    <string name="settings_manual">Manual (Sync now only)</string>
+    <string name="settings_manual_on">Only Sync now syncs. The timing below has no effect while this is on.</string>
+    <string name="settings_full_sync">Full sync</string>
+    <string name="settings_full_sync_detail">Compares every contact on Proton with this phone. It also runs as soon as a check finds a change on Proton.</string>
+    <string name="settings_check">Check Proton for changes</string>
+    <string name="settings_check_detail">A quick look at what changed on Proton; a change starts a full sync right away. It can\'t be longer than the full sync.</string>
+    <string name="settings_check_same">Same as full sync</string>
+    <string name="settings_timing_note">Edits made on this phone are sent to Proton shortly after you make them. Android may delay syncs while the phone is idle.</string>
+    <string name="settings_interval_failed">Couldn\'t change the sync timing.</string>
+    <!-- Import from this phone and Keep a copy on this phone. -->
+    <string name="settings_import">Import from this phone</string>
+    <string name="settings_import_detail">Copies this phone\'s own contacts to Proton.</string>
+    <string name="settings_keep_copy">Keep a copy on this phone</string>
+    <string name="settings_keep_copy_detail">Copies your Proton contacts into this phone\'s own contacts before you uninstall.</string>
+    <string name="settings_keep_copy_question">Keep a copy on this phone?</string>
+    <string name="settings_keep_copy_warning">The copies don\'t sync. Do this just before uninstalling: until then, an edit in the Contacts app may change the copy instead of the synced contact. Each time you do this adds another copy.</string>
+    <string name="settings_copy">Copy</string>
+    <string name="settings_copying">Copying contacts…</string>
+    <string name="settings_copy_some">Copied %1$d of %2$d contacts; %3$d couldn\'t be copied.</string>
+    <string name="settings_copy_nothing">There are no contacts on this phone to copy. If Contact Scopes is on for OpenSync for Proton, turn it off and try again.</string>
+    <string name="settings_copy_unreadable">Couldn\'t read this phone\'s contacts.</string>
+    <string name="settings_copy_stopped">Keep a copy stopped. Some contacts may already be copied; check the Contacts app before trying again.</string>
+    <string name="settings_log_out">Log out</string>
+    <string name="settings_log_out_question">Log out? Sync stops; your contacts and settings stay on this phone.</string>
+    <string name="settings_log_out_failed">Couldn\'t log out. Try again.</string>
+    <string name="settings_remove">Remove from this phone</string>
+    <string name="settings_remove_question_no_count">The account\'s contacts couldn\'t be counted (is the contacts permission granted?). Removing deletes all of them from this phone, phone edits not uploaded to Proton included. Remove anyway?</string>
+    <string name="settings_remove_failed">Couldn\'t remove the account. Try again.</string>
+    <string name="settings_note_session">Proton\'s session for this login may still be open. You can end it in Proton\'s web settings.</string>
+    <string name="settings_note_account_kept">Android kept the account, so the app kept it too, signed out. You can remove it in Android\'s settings.</string>
+    <string name="settings_dismiss">Dismiss</string>
+    <string name="settings_export_logs">Export logs</string>
+    <string name="settings_export_logs_detail">Saves the app\'s diagnostics (counts and outcomes only: no names, addresses, or contact details) to a file you choose.</string>
+    <string name="settings_logs_saved">Logs saved.</string>
+    <string name="settings_logs_failed">Couldn\'t save the logs.</string>
+    <string name="settings_about">About</string>
+    <string name="settings_version">Version %s</string>
+    <string name="settings_not_affiliated">Not affiliated with Proton AG.</string>
+    <string name="settings_copyright">Copyright 2026 rboza</string>
+    <string name="settings_licence">Licence: GPL-3.0-or-later</string>
+    <string name="settings_source">Source: github.com/rboza/opensyncforproton</string>
+    <string name="settings_third_party">Third-party licences</string>
+    <string name="settings_close">Close</string>
+    <plurals name="settings_remove_question">
+        <item quantity="one">Remove from this phone? %d contact will be deleted from this phone.</item>
+        <item quantity="other">Remove from this phone? %d contacts will be deleted from this phone.</item>
+    </plurals>
+    <plurals name="settings_remove_edits">
+        <item quantity="one">%d of them has phone edits not uploaded to Proton, which will be lost.</item>
+        <item quantity="other">%d of them have phone edits not uploaded to Proton, which will be lost.</item>
+    </plurals>
+    <plurals name="settings_keep_copy_count">
+        <item quantity="one">Copies your %d Proton contact into this phone\'s own contacts, so it stays if you uninstall OpenSync for Proton.</item>
+        <item quantity="other">Copies your %d Proton contacts into this phone\'s own contacts, so they stay if you uninstall OpenSync for Proton.</item>
+    </plurals>
+    <plurals name="settings_copied">
+        <item quantity="one">Copied %d contact into this phone\'s contacts.</item>
+        <item quantity="other">Copied %d contacts into this phone\'s contacts.</item>
+    </plurals>
+    <plurals name="settings_copy_none">
+        <item quantity="one">Couldn\'t copy your %d contact. If Contact Scopes is on for OpenSync for Proton, turn it off and try again.</item>
+        <item quantity="other">Couldn\'t copy any of your %d contacts. If Contact Scopes is on for OpenSync for Proton, turn it off and try again.</item>
+    </plurals>
+    <plurals name="settings_interval_minutes">
+        <item quantity="one">Every %d minute</item>
+        <item quantity="other">Every %d minutes</item>
+    </plurals>
+    <plurals name="settings_interval_hours">
+        <item quantity="one">Every hour</item>
+        <item quantity="other">Every %d hours</item>
+    </plurals>
+    <!-- The import screen (docs/sync.md § Import from this phone). -->
+    <string name="import_needs_sync_on">Import needs sync on. Turn off dry run on the main screen first.</string>
+    <string name="import_log_in">Log in to import.</string>
+    <string name="import_unreadable">Couldn\'t read this phone\'s contacts.</string>
+    <string name="import_no_contacts">There are no contacts in this phone\'s own contacts to import. If Contact Scopes is on for OpenSync for Proton, turn it off and try again.</string>
+    <string name="import_phone_only">On this phone only (%d)</string>
+    <string name="import_in_proton">Already in Proton (%d)</string>
+    <string name="import_originals">Imported originals (%d)</string>
+    <string name="import_caution">The Contacts app may show an original and its copy as one contact. Deleting it there deletes both, on Proton too; to keep only the copy, use Remove originals.</string>
+    <string name="import_no_name">No name</string>
+    <string name="import_mark_imported_before">Imported before</string>
+    <string name="import_mark_in_proton">Looks like it\'s already in Proton</string>
+    <string name="import_mark_no_name_or_email">Can\'t be imported: it needs a name or an e-mail address.</string>
+    <string name="import_mark_label">Can\'t be imported: one of its labels can\'t be saved to Proton.</string>
+    <string name="import_select_all">Select all</string>
+    <string name="import_import">Import</string>
+    <string name="import_question_copies">Copies them into OpenSync for Proton, which sends them to Proton at the next sync. The originals stay as they are.</string>
+    <string name="import_importing">Importing contacts…</string>
+    <string name="import_copied_some">Copied %1$d of %2$d contacts; %3$d couldn\'t be copied.</string>
+    <string name="import_stopped">Import stopped. Some contacts may already be copied; check this screen before trying again.</string>
+    <plurals name="import_question">
+        <item quantity="one">Import %d contact to Proton?</item>
+        <item quantity="other">Import %d contacts to Proton?</item>
+    </plurals>
+    <plurals name="import_question_unmapped">
+        <item quantity="one">%d of them has fields that aren\'t copied, such as IM or groups; the originals keep them.</item>
+        <item quantity="other">%d of them have fields that aren\'t copied, such as IM or groups; the originals keep them.</item>
+    </plurals>
+    <plurals name="import_copied">
+        <item quantity="one">Copied %d contact. It\'s sent to Proton at the next sync.</item>
+        <item quantity="other">Copied %d contacts. They\'re sent to Proton at the next sync.</item>
+    </plurals>
+    <plurals name="import_copy_none">
+        <item quantity="one">Couldn\'t copy the contact. If Contact Scopes is on for OpenSync for Proton, turn it off and try again.</item>
+        <item quantity="other">Couldn\'t copy any of the %d contacts. If Contact Scopes is on for OpenSync for Proton, turn it off and try again.</item>
+    </plurals>
+    <!-- The import screen's Merge section. -->
+    <string name="import_proton_name">Proton: %s</string>
+    <string name="import_reason_same_contact">Android shows them as one contact</string>
+    <string name="import_reason_email">Shares an e-mail address</string>
+    <string name="import_reason_phone">Shares a phone number</string>
+    <string name="import_reason_name">Same name</string>
+    <string name="import_not_chosen">Not chosen</string>
+    <string name="import_combine">Combine both</string>
+    <string name="import_keep_proton">Keep Proton\'s</string>
+    <string name="import_keep_phone">Keep the phone\'s</string>
+    <string name="import_keep_both">Keep both</string>
+    <string name="import_choose_selected">Choose for selected…</string>
+    <string name="import_choose_selected_title">Choose for selected</string>
+    <string name="import_settle_all">Settle all as…</string>
+    <string name="import_settle_all_title">Settle all as</string>
+    <string name="import_apply">Apply</string>
+    <string name="import_merge_later">Proton changes at the next sync.</string>
+    <string name="import_merge_replaced_one_losing">1 will replace Proton\'s copy and lose values only Proton has.</string>
+    <string name="import_applying">Applying choices…</string>
+    <string name="import_applied_some">Applied %1$d of %2$d choices; %3$d changed since they were shown or couldn\'t be written.</string>
+    <string name="import_merge_stopped">Merge stopped. Some choices may already be applied; check this screen before trying again.</string>
+    <plurals name="import_merge_question">
+        <item quantity="one">Apply %d choice?</item>
+        <item quantity="other">Apply %d choices?</item>
+    </plurals>
+    <plurals name="import_merge_combined">
+        <item quantity="one">%d will be combined with Proton\'s copy.</item>
+        <item quantity="other">%d will be combined with Proton\'s copy.</item>
+    </plurals>
+    <plurals name="import_merge_kept_proton">
+        <item quantity="one">%d will stay as Proton has it.</item>
+        <item quantity="other">%d will stay as Proton has them.</item>
+    </plurals>
+    <plurals name="import_merge_replaced">
+        <item quantity="one">%d will replace Proton\'s copy.</item>
+        <item quantity="other">%d will replace Proton\'s copy.</item>
+    </plurals>
+    <!-- Its quantity is L, the pairs that lose values; the first number is R, those that replace. -->
+    <plurals name="import_merge_replaced_losing">
+        <item quantity="one">%1$d will replace Proton\'s copy; %2$d of them loses values only Proton has.</item>
+        <item quantity="other">%1$d will replace Proton\'s copy; %2$d of them lose values only Proton has.</item>
+    </plurals>
+    <plurals name="import_merge_kept_both">
+        <item quantity="one">%d will be imported as a new contact.</item>
+        <item quantity="other">%d will be imported as new contacts.</item>
+    </plurals>
+    <plurals name="import_applied">
+        <item quantity="one">Applied %d choice.</item>
+        <item quantity="other">Applied %d choices.</item>
+    </plurals>
+    <plurals name="import_apply_none">
+        <item quantity="one">Couldn\'t apply the choice. If Contact Scopes is on for OpenSync for Proton, turn it off and try again.</item>
+        <item quantity="other">Couldn\'t apply any of the %d choices. If Contact Scopes is on for OpenSync for Proton, turn it off and try again.</item>
+    </plurals>
+    <!-- The import screen's Imported originals section. -->
+    <string name="import_original_changed">Changed since the import; it stays.</string>
+    <string name="import_original_holds_more">Has values its copy doesn\'t; it stays.</string>
+    <string name="import_removal_waits">Some contacts are missing from Proton and wait for your answer on the main screen. Remove originals waits until then.</string>
+    <string name="import_remove_originals">Remove originals</string>
+    <string name="import_remove">Remove</string>
+    <string name="import_remove_others_stay">The others stay.</string>
+    <string name="import_removing">Removing originals…</string>
+    <string name="import_removed_some">Removed %1$d of %2$d originals; %3$d changed since they were shown or couldn\'t be removed.</string>
+    <string name="import_remove_one_changed">Couldn\'t remove the original; it changed since it was shown.</string>
+    <string name="import_remove_stopped">Removing stopped. Some originals may already be removed.</string>
+    <plurals name="import_remove_question">
+        <item quantity="one">Remove %d original from this phone?</item>
+        <item quantity="other">Remove %d originals from this phone?</item>
+    </plurals>
+    <plurals name="import_remove_copies">
+        <item quantity="one">Its copy is in Proton with every value it holds, and stays in OpenSync for Proton.</item>
+        <item quantity="other">Their copies are in Proton with every value they hold, and stay in OpenSync for Proton.</item>
+    </plurals>
+    <plurals name="import_removed">
+        <item quantity="one">Removed %d original.</item>
+        <item quantity="other">Removed %d originals.</item>
+    </plurals>
+    <plurals name="import_remove_none">
+        <item quantity="one">Couldn\'t remove the original. If Contact Scopes is on for OpenSync for Proton, turn it off and try again.</item>
+        <item quantity="other">Couldn\'t remove any of the %d originals. If Contact Scopes is on for OpenSync for Proton, turn it off and try again.</item>
+    </plurals>
+    <!-- Notifications, one channel. -->
+    <string name="notify_channel">Sync problems</string>
+    <string name="notify_title">Contacts sync needs you</string>
+    <string name="notify_public">Sync problem</string>
+    <string name="notify_session_expired">Log in to resume.</string>
+    <string name="notify_captcha">Open the app to verify.</string>
+    <string name="notify_permission_revoked">Sync is paused until the contacts permission is granted again.</string>
+    <plurals name="notify_duplicate_rows">
+        <item quantity="one">%d contact with duplicate rows is held. Nothing was deleted.</item>
+        <item quantity="other">%d contacts with duplicate rows are held. Nothing was deleted.</item>
+    </plurals>
+    <!-- The held list's, no names. -->
+    <plurals name="notify_held">
+        <item quantity="one">%d contact held: choose which copy to keep.</item>
+        <item quantity="other">%d contacts held: choose which copy to keep.</item>
+    </plurals>
+    <plurals name="login_wait_minutes">
+        <item quantity="one">Wait about %d minute.</item>
+        <item quantity="other">Wait about %d minutes.</item>
+    </plurals>
+</resources>

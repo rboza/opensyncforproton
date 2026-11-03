@@ -1,0 +1,65 @@
+# Developer tools for this project (docs/decisions.md D27).
+# Exact versions only; change them in review.
+
+[tools]
+java = "temurin-25.0.4+7.0.LTS" # Temurin 25.0.4+7 LTS: runs the build and tests; code targets Java 17 (D1)
+android-sdk = "23.0"           # Android SDK command-line tools; sets ANDROID_HOME
+go = "1.27.1"                  # tools/fixture-gen and tools/release
+
+[env]
+# One Android user home for adb, the emulator, avdmanager, and Gradle (XDG_CONFIG_HOME otherwise splits them).
+ANDROID_USER_HOME = "{{env.HOME}}/.android"
+_.path = { path = ["{{env.ANDROID_HOME}}/platform-tools", "{{env.ANDROID_HOME}}/emulator"], tools = true }
+
+[tasks.android-sdk]
+description = "Install the pinned Android SDK packages (API 37)"
+run = """
+android sdk install \
+  platforms/android-37.0@2.0.0 \
+  build-tools/37.0.0@37.0.0 \
+  platform-tools@37.0.1 \
+  emulator@37.1.11 \
+  system-images/android-37.0/google_apis/x86_64@6.0.0
+"""
+
+[tasks.fixtures]
+description = "Check the committed crypto fixtures; `mise run fixtures -- -update` regenerates them"
+dir = "{{config_root}}/tools/fixture-gen"
+run = "go test ./... -count=1"
+
+[vars]
+# What `check` runs after `fixtures` and `release-test`, and what `lock` resolves: build-logic's tests, the JVM tests,
+# the mapping tests on R8's output, the module rules, the merged-manifest check, a release build with R8 signed with
+# the debug key, and the instrumented tests' APK (compiled and verified; `device-tests` runs it).
+gradle_check = ":build-logic:test test :mapping:testOnR8 checkModuleRules :app:checkReleaseManifestRules :app:assembleRelease :crypto:assembleDebugAndroidTest :sync:assembleDebugAndroidTest :app:assembleDebugAndroidTest"
+
+[tasks.release-test]
+description = "The release script's tests (throwaway keys only)"
+dir = "{{config_root}}/tools/release"
+run = "go test ./... -count=1"
+
+[tasks.release]
+description = "Build and sign the release APK with the release key (docs/releasing.md)"
+dir = "{{config_root}}/tools/release"
+run = "go run . {{config_root}}"
+
+[tasks.check]
+description = "Everything CI runs; must pass before a branch is offered for review"
+depends = ["fixtures", "release-test"]
+run = "./gradlew {{vars.gradle_check}}"
+
+[tasks.device-tests]
+description = "Instrumented tests on a running API 37 emulator (never a phone): `emulator -avd osp-api37` first"
+run = '''
+set -- $(adb devices | awk 'NR > 1 && NF { print $1 }')
+if [ $# -ne 1 ] || ! printf '%s' "$1" | grep -Eqx 'emulator-[0-9]+' ||
+   [ "$(adb -s "$1" shell getprop ro.boot.qemu | tr -d '[:space:]')" != 1 ]; then
+  echo "device-tests: needs exactly one running emulator and no other device ($# found; a lone device must report ro.boot.qemu=1)" >&2
+  exit 1
+fi
+ANDROID_SERIAL="$1" ./gradlew :crypto:connectedDebugAndroidTest :sync:connectedDebugAndroidTest :app:connectedDebugAndroidTest
+'''
+
+[tasks.lock]
+description = "After an approved dependency change: rewrite the dependency locks and add checksums to gradle/verification-metadata.xml (in a fresh clone with an empty GRADLE_USER_HOME, so a cold cache's files are recorded)"
+run = "./gradlew --write-locks --write-verification-metadata sha256 {{vars.gradle_check}}"

@@ -1,0 +1,32 @@
+{
+ "body": {
+  "Code": 1000,
+  "Contact": {
+   "ContactEmails": [
+    {
+     "CanonicalEmail": "GENERATED-GENERATED-GENERAT",
+     "ContactID": "GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATE",
+     "Defaults": 1,
+     "Email": "GENERATED-GENERATED-GENERAT",
+     "ID": "GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATE",
+     "IsProton": 0,
+     "LabelIDs": [],
+     "LastUsedTime": 1767225600,
+     "Name": "GENERATED-GENERATED-GE",
+     "Order": 1,
+     "Type": []
+    }
+   ],
+   "CreateTime": 1767225600,
+   "ID": "GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATE",
+   "LabelIDs": [],
+   "ModifyTime": 1767225600,
+   "Name": "GENERATED-GENERATED-GE",
+   "Size": 0,
+   "UID": "GENERATED-GENERATED-GENERATED-GENERATED-GENER"
+  }
+ },
+ "retryAfter": false,
+ "route": "PUT contacts/v4/contacts/{id}",
+ "status": 200
+}

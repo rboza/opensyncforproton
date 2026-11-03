@@ -1,0 +1,10 @@
+{
+  "body": {
+    "Code": 10013,
+    "Details": {},
+    "Error": "GENERATED-GENERATED-G"
+  },
+  "retryAfter": false,
+  "route": "POST core/v4/auth/refresh",
+  "status": 400
+}

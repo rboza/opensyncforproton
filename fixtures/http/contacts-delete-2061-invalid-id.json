@@ -1,0 +1,10 @@
+{
+ "body": {
+  "Code": 2061,
+  "Details": {},
+  "Error": "GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERA"
+ },
+ "retryAfter": false,
+ "route": "PUT contacts/v4/contacts/delete",
+ "status": 400
+}

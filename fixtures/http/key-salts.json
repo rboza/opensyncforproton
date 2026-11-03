@@ -1,0 +1,18 @@
+{
+  "body": {
+    "Code": 1000,
+    "KeySalts": [
+      {
+        "ID": "GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATE",
+        "KeySalt": "GENERATED-GENERATED-GENE"
+      },
+      {
+        "ID": "GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATE",
+        "KeySalt": null
+      }
+    ]
+  },
+  "retryAfter": false,
+  "route": "GET core/v4/keys/salts",
+  "status": 200
+}

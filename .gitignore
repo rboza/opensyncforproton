@@ -1,0 +1,16 @@
+# Throwaway spike apps: findings go into docs/, the code is not kept.
+/spikes/
+
+# Credentials for live spikes: never committed, wherever they are.
+credentials.env
+
+# Gradle and Kotlin build state. Build directories are anchored so that a source
+# package named `build` (build-logic's) isn't ignored.
+.gradle/
+/build/
+/*/build/
+.kotlin/
+local.properties
+
+# Logs exported from the app (Settings → Export logs) for a Pixel check: never committed, wherever they are.
+osp-logs-*.jsonl

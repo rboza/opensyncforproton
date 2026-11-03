@@ -1,0 +1,10 @@
+{
+  "body": {
+    "Code": 5002,
+    "Details": {},
+    "Error": "GENERATED-GENERATED"
+  },
+  "retryAfter": false,
+  "route": "POST auth/v4/info",
+  "status": 400
+}

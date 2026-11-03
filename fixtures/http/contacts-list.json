@@ -1,0 +1,29 @@
+{
+  "body": {
+    "Code": 1000,
+    "Contacts": [
+      {
+        "CreateTime": 1767225600,
+        "ID": "GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATE",
+        "LabelIDs": [],
+        "ModifyTime": 1767225600,
+        "Name": "GENERATED-",
+        "Size": 0,
+        "UID": "GENERATED-GENERATED-GENERATED-GENERATED-GENERAT"
+      },
+      {
+        "CreateTime": 1767225600,
+        "ID": "GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATED-GENERATE",
+        "LabelIDs": [],
+        "ModifyTime": 1767225600,
+        "Name": "GENERATED-",
+        "Size": 0,
+        "UID": "GENERATED-GENERATED-GENERATED-GENERATED-GENERAT"
+      }
+    ],
+    "Total": 3
+  },
+  "retryAfter": false,
+  "route": "GET contacts/v4/contacts",
+  "status": 200
+}

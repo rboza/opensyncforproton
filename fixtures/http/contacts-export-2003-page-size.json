@@ -1,0 +1,14 @@
+{
+  "body": {
+    "Code": 2003,
+    "Details": {
+      "[pagination]": [
+        "GENERATED-GENERATED-GENERATED-GEN"
+      ]
+    },
+    "Error": "GENERATED-GENERATED-GENERATED-GEN"
+  },
+  "retryAfter": false,
+  "route": "GET contacts/v4/contacts/export",
+  "status": 422
+}

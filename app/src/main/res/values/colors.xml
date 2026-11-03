@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The app's icon: light violet on a dark tile, not Proton's violet. -->
+    <color name="icon_tile">#FF1F1C28</color>
+    <color name="icon_glyph">#FFA895FF</color>
+</resources>

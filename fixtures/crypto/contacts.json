@@ -1,0 +1,150 @@
+{
+  "testOnly": true,
+  "comment": "TEST-ONLY data from tools/fixture-gen. Never use these keys or passwords for anything real.",
+  "contacts": [
+    {
+      "name": "all_types",
+      "id": "test-only-contact-1",
+      "expect": "ok",
+      "plaintexts": [
+        "BEGIN:VCARD\r\nVERSION:4.0\r\nPRODID:-//Test Only//fixture-gen//EN\r\nCATEGORIES:test-only\r\nEND:VCARD\r\n",
+        "BEGIN:VCARD\r\nVERSION:4.0\r\nNICKNAME:tester\r\nEND:VCARD\r\n",
+        "BEGIN:VCARD\r\nVERSION:4.0\r\nPRODID:-//Test Only//fixture-gen//EN\r\nFN:Test Only Person\r\nUID:urn:uuid:e822c460-9f6b-45fe-b2c7-928b30b85f7e\r\nITEM1.EMAIL;TYPE=work:test-only@example.org\r\nEND:VCARD\r\n",
+        "BEGIN:VCARD\r\nVERSION:4.0\r\nN:Person;Test Only;;;\r\nTEL;TYPE=cell:+1 555 0100\r\nNOTE:test-only note\r\nEND:VCARD\r\n"
+      ],
+      "cards": [
+        {
+          "type": 0,
+          "data": "BEGIN:VCARD\r\nVERSION:4.0\r\nPRODID:-//Test Only//fixture-gen//EN\r\nCATEGORIES:test-only\r\nEND:VCARD\r\n"
+        },
+        {
+          "type": 1,
+          "data": "-----BEGIN PGP MESSAGE-----\n\nwV4DIUjDgWYn2tASAQdAQp1FdMbrA6R3/geGMNgtVXmIpH6zp0VDVIKYojhrUXow\n1qFlFguWWGIMeP7s1xOpKGCfgxIKjJGeAJj/wd1qSYngTNniMvH3yqahQMIZCCBC\n0mcB+OO0JUI4t5hRRvmxGGElpm9MeQw3yMH+SN7Bqdb6M3eQKgfupfZpK+ZR3BZ2\nA2YwgmH6O6Q8Tm9HiHDR5aMlPZjFq86RXhXCT8yeL6Y6b4iYJJHlZWNptix4DuFl\njgfJrjpD3mlb\n=nZxS\n-----END PGP MESSAGE-----"
+        },
+        {
+          "type": 2,
+          "data": "BEGIN:VCARD\r\nVERSION:4.0\r\nPRODID:-//Test Only//fixture-gen//EN\r\nFN:Test Only Person\r\nUID:urn:uuid:e822c460-9f6b-45fe-b2c7-928b30b85f7e\r\nITEM1.EMAIL;TYPE=work:test-only@example.org\r\nEND:VCARD\r\n",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwqsEARYIAF0FgmlVuQAJENrrm/1CnN5ANRQAAAAAABwAEHNhbHRAbm90YXRpb25z\nLm9wZW5wZ3Bqcy5vcmd3Ku6ntaVN/vtERP09tk6mFiEEEhReoct7ACkPlcjH2uub\n/UKc3kAAABe0AP9KyGp3wLGpfpQJoXGwnIe/Oap2ur6L6ivnk11XzCbT6wD/U9TJ\n7Z4blUX5e+RnBcOGy1w9cp429Q3ADV9slFZs3Qo=\n=q5zv\n-----END PGP SIGNATURE-----"
+        },
+        {
+          "type": 3,
+          "data": "-----BEGIN PGP MESSAGE-----\n\nwV4DIUjDgWYn2tASAQdAT0An+7AJpezeZkNsDtX8wxQPUQQbKEpD0B09TuWy030w\nYktS6GtaMAlQD8VU57axwxdJmFw0VQWAk7XySw/5rbb//jsGXr6KjfAxDs0Ft230\n0p0BFZBrrxAprs/kDr+sV0xWqTcVkKbZkhyRTybuuivu/isPOFSMaTAVPfyIA1cc\n4sA9JUqvuil40pSJvkBW5BkFMDEkgX0j60oLUHWQyIhlkepcmuaYDF4SqCaHLsGx\n+E7bozsE3L1kFtT8/TcA3zfdB6xZOOy9HNEmwHi92/Kq0QL9Tu9WOKTDSU/FGx/R\n1f53ekXWYo4WQiBkZAxj\n=F5GX\n-----END PGP MESSAGE-----",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwqsEARYIAF0FgmlVuQAJENrrm/1CnN5ANRQAAAAAABwAEHNhbHRAbm90YXRpb25z\nLm9wZW5wZ3Bqcy5vcmcCA/323gJoLq+ftje0aTGHFiEEEhReoct7ACkPlcjH2uub\n/UKc3kAAALuFAQDPEIJIc6e+5m59upXW0kzWBcTHKHAQX/tKdpyQgnY+YAEAlat8\n9ZgNzkRuOE1wWdUA6AFnK7hexir8YUrU7S/E2wI=\n=m376\n-----END PGP SIGNATURE-----"
+        }
+      ]
+    },
+    {
+      "name": "signed_only",
+      "id": "test-only-contact-2",
+      "expect": "ok",
+      "plaintexts": [
+        "BEGIN:VCARD\r\nVERSION:4.0\r\nPRODID:-//Test Only//fixture-gen//EN\r\nFN:Test Only Person\r\nUID:urn:uuid:e822c460-9f6b-45fe-b2c7-928b30b85f7e\r\nITEM1.EMAIL;TYPE=work:test-only@example.org\r\nEND:VCARD\r\n"
+      ],
+      "cards": [
+        {
+          "type": 2,
+          "data": "BEGIN:VCARD\r\nVERSION:4.0\r\nPRODID:-//Test Only//fixture-gen//EN\r\nFN:Test Only Person\r\nUID:urn:uuid:e822c460-9f6b-45fe-b2c7-928b30b85f7e\r\nITEM1.EMAIL;TYPE=work:test-only@example.org\r\nEND:VCARD\r\n",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwqsEARYIAF0FgmlVuQAJENrrm/1CnN5ANRQAAAAAABwAEHNhbHRAbm90YXRpb25z\nLm9wZW5wZ3Bqcy5vcmd8hYShyu9DMqDCspH0wWKpFiEEEhReoct7ACkPlcjH2uub\n/UKc3kAAABdKAQDZuYjfwNFStAaDL7gBxahcwkDbj1Lc5O95vznlfI2nLwEAgmt4\nOYp/dB8vwxpha1SgJsC92lMFN1w8JDnKKX3E7wg=\n=GSMQ\n-----END PGP SIGNATURE-----"
+        }
+      ]
+    },
+    {
+      "name": "type2_trailing_spaces",
+      "id": "test-only-contact-3",
+      "expect": "ok",
+      "plaintexts": [
+        "BEGIN:VCARD\r\nVERSION:4.0\r\nPRODID:-//Test Only//fixture-gen//EN\r\nFN:Test Only Spaces  \r\nUID:urn:uuid:69978308-f754-46ac-97b4-8ef0d31f2ba9\r\nEND:VCARD\r\n"
+      ],
+      "cards": [
+        {
+          "type": 2,
+          "data": "BEGIN:VCARD\r\nVERSION:4.0\r\nPRODID:-//Test Only//fixture-gen//EN\r\nFN:Test Only Spaces  \r\nUID:urn:uuid:69978308-f754-46ac-97b4-8ef0d31f2ba9\r\nEND:VCARD\r\n",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwqsEARYIAF0FgmlVuQAJENrrm/1CnN5ANRQAAAAAABwAEHNhbHRAbm90YXRpb25z\nLm9wZW5wZ3Bqcy5vcmcSGgczB6hcYkTq9VdoTu5DFiEEEhReoct7ACkPlcjH2uub\n/UKc3kAAAGpmAQDZUtuAUzSiO011q4Q8fBvPe4xdkgQUzaDYw0PbJ9sCvQD+OaIa\nglYG8qm28uFnEcHJRP8+zgzsi+4TXZKLbTSprwo=\n=bll3\n-----END PGP SIGNATURE-----"
+        }
+      ]
+    },
+    {
+      "name": "type2_data_changed_after_signing",
+      "id": "test-only-contact-4",
+      "expect": "rejected",
+      "cards": [
+        {
+          "type": 2,
+          "data": "BEGIN:VCARD\r\nVERSION:4.0\r\nPRODID:-//Test Only//fixture-gen//EN\r\nFN:Someone Else\r\nUID:urn:uuid:e822c460-9f6b-45fe-b2c7-928b30b85f7e\r\nITEM1.EMAIL;TYPE=work:test-only@example.org\r\nEND:VCARD\r\n",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwqsEARYIAF0FgmlVuQAJENrrm/1CnN5ANRQAAAAAABwAEHNhbHRAbm90YXRpb25z\nLm9wZW5wZ3Bqcy5vcmd67VP+3Ua9r7WU1HCYUPKLFiEEEhReoct7ACkPlcjH2uub\n/UKc3kAAAP/TAPwIc3MpXRLijWTcb+Vm3vgWfosSfD0KQbJ0zAGexUea3gD/bQJ8\nQbZm0KicrWSZ4+vwviSBaa/755h9xHyGZ0Z2oAU=\n=1A7F\n-----END PGP SIGNATURE-----"
+        }
+      ]
+    },
+    {
+      "name": "type3_signed_by_unrelated_key",
+      "id": "test-only-contact-5",
+      "expect": "rejected",
+      "cards": [
+        {
+          "type": 3,
+          "data": "-----BEGIN PGP MESSAGE-----\n\nwV4DIUjDgWYn2tASAQdA00w3fUiR/mpYBUcXHHJ7NgumVUjUGrmT0I9RdCdfEDYw\nPyjJeq+49SQ66sEaOj/3rKw3Yds5uPpjmFrmmp4piIDWMqY4tW4fKjw8ZTr67w3V\n0p0BcMeSHU7WsKDPQ9lKitPVeBhkkT5foTGxNw1G89nrd+CoshoXQY/+6+6617R5\nAfpEmVXaQwbLDGySYc+c+WhJDHBybYX+CrxH6Q9lYxyZk6lP3+r56GxbpUf9yyA+\nZGwxvyjEBlumr7MXJ9T5zHsN6uJDI4bzcyJHjqVeT3id8fUjpgeP8ohI3RSWEXrS\nZsjrtm92Kwbmnoo814UB\n=FuAn\n-----END PGP MESSAGE-----",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwqsEARYIAF0FgmlVuQAJEIIoORAWXJ8jNRQAAAAAABwAEHNhbHRAbm90YXRpb25z\nLm9wZW5wZ3Bqcy5vcmeHOfiL0+raF38OUMv1YXUJFiEEYtWSWWvtypEMW9bLgig5\nEBZcnyMAAKhaAP973fypODfUr6ULxuE3CfHMu+fogoLv5gtOujjtcnH6CgEAmDWY\nfLol9982zvU1f3//OhFc83q9+3DNLJs222/BbQM=\n=lJnx\n-----END PGP SIGNATURE-----"
+        }
+      ]
+    },
+    {
+      "name": "type3_encrypted_to_unrelated_key",
+      "id": "test-only-contact-6",
+      "expect": "rejected",
+      "cards": [
+        {
+          "type": 3,
+          "data": "-----BEGIN PGP MESSAGE-----\n\nwV4DVlJOgeQMaigSAQdAoFvFTWJWbkn5vtQHBVhQt/q1ZQjFec+pIs0xMtul3Cow\n5nERHf5Qbvc3IrPze+k4pzeECMGScKLpgNvXVYISC2NopNCwTD+h8+neJK/mHF2n\n0p0BhK0O1LbCRswFYBJMwwJtefxAKbYIeU1wT0kKOXymh8vTWmhruzw2F0LeOGaP\nWt0WmTn4TYmRLYFV+eNm6W5v3q4S2trzscE9hQtxtuHLPSsMwhDKwvSmYMTFyblP\nMEIrmH13tb/zkS/1hWq9cOUF1n0pw/+rGfpox21NI5S3rh+c6WL/fCzuxut+3h0d\nDZfgL4lB3t4rzY6p17js\n=R4cO\n-----END PGP MESSAGE-----",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwqsEARYIAF0FgmlVuQAJENrrm/1CnN5ANRQAAAAAABwAEHNhbHRAbm90YXRpb25z\nLm9wZW5wZ3Bqcy5vcmc4Z+GkGnpUj/0EdXa46ZVVFiEEEhReoct7ACkPlcjH2uub\n/UKc3kAAAGVWAQC562mpS02iKwS8TT6bvTN9FTFN8gDcpIEot0zKWy2tSQEAgo6x\nvnFel1IYIB8KdtPSSuEWWU20sy1le93bqtZHJwM=\n=t5mb\n-----END PGP SIGNATURE-----"
+        }
+      ]
+    },
+    {
+      "name": "type3_corrupt_data",
+      "id": "test-only-contact-7",
+      "expect": "rejected",
+      "cards": [
+        {
+          "type": 3,
+          "data": "-----BEGIN PGP MESSAGE-----\n\nwV4DIUjDgWYn2tASAQdAceVGzjQunm3TWnj2elTdJwW1So3Z89xXVDP03J8knwsw\nL83JnHWOYbR3UVam5NuUxo2gS8Px1wVm8g5omwY7IGX8lMuNQTmHEzCve+SS+AJG\n0p0BwXmlXaCql7oslxc+q2GJ4O2Z7RP/u/TK2MeV31eO3cq40vliAsVmYwU/w/+Q\nS6RuiO4emwAfcMaVMj0+DexaxvhEMcDaHv6JUCVG8bFu38PzPqGWgE6aKngYh2QZ\n5aSJpbr7gD8opm40rGkAgPgo4Ol2gLq0AoGMYzSLUpjFubwwx3/GsVDEH2XTe+rm\nNTdrqH1y4Li8Soc9UfYV\n=5/sh\n-----END PGP MESSAGE-----",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwqsEARYIAF0FgmlVuQAJENrrm/1CnN5ANRQAAAAAABwAEHNhbHRAbm90YXRpb25z\nLm9wZW5wZ3Bqcy5vcmdKCvHx4HbsBDgY2T8AcpFRFiEEEhReoct7ACkPlcjH2uub\n/UKc3kAAAKsiAQDQlksSpZ6JBjYAEjAfld9ZW2cEdQPyAqDhRJWUwdft7gD/fxtS\nRf1sNivOKCkx8tKFwI78RWNKAWQh8+h8LSy5VQ8=\n=BhYA\n-----END PGP SIGNATURE-----"
+        }
+      ]
+    },
+    {
+      "name": "type3_signed_by_address_key",
+      "id": "test-only-contact-8",
+      "expect": "verifies_with_address_key_only",
+      "cards": [
+        {
+          "type": 3,
+          "data": "-----BEGIN PGP MESSAGE-----\n\nwV4DIUjDgWYn2tASAQdAm8ckk40M02ktge/Tzhm73CbshhL7uoSTmVBR7U5guzAw\n2++34yaLV6vQZWR10Ux+0JKKul8DmLMzC1wBzx+OIntY76Iwj9D94SZGBk7WQQSi\n0p0BrRBL+T0y2CzsvvpCzEYxQvtG1jDk1Ll74fvMUxXduiBTos6ADbM0CXASXDAk\n0hN7kDHsLk82LBkzDzWmercIyuOkrF/KA3QnhGZSkp+FV6V2okq9kFzWSKz3KRDf\n5vyWJUBBcI6sgMWE18QXpqHWs1tY4O4jaz/Ahnz1R7SwDnfRAcpwKxcoO/WlGwuc\ndEfb8UvZPjRdvEFLk1p2\n=gI9E\n-----END PGP MESSAGE-----",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwqsEARYIAF0FgmlVuQAJEMo7q9rhgKv5NRQAAAAAABwAEHNhbHRAbm90YXRpb25z\nLm9wZW5wZ3Bqcy5vcmf1neWJgCDNOwb1UiLVRv7oFiEEi8Cp0tXbHKjU+VKZyjur\n2uGAq/kAAFZ8AP9bbBw7p5Nhc/IVy4+eVqwqorvWl03NGsPvNGGlC6fXFAD+OTgU\nzQHSk6yWc+tXxmYFOXR4yc8apxChiJ0vK5Fi8AI=\n=BK2c\n-----END PGP SIGNATURE-----"
+        }
+      ]
+    },
+    {
+      "name": "type1_not_encrypted",
+      "id": "test-only-contact-9",
+      "expect": "rejected_not_encrypted",
+      "cards": [
+        {
+          "type": 1,
+          "data": "-----BEGIN PGP MESSAGE-----\n\nyzx1AGlVuQBCRUdJTjpWQ0FSRA0KVkVSU0lPTjo0LjANCk5JQ0tOQU1FOnRlc3Rl\ncg0KRU5EOlZDQVJEDQo=\n=26CY\n-----END PGP MESSAGE-----"
+        }
+      ]
+    },
+    {
+      "name": "type3_not_encrypted",
+      "id": "test-only-contact-10",
+      "expect": "rejected_not_encrypted",
+      "cards": [
+        {
+          "type": 3,
+          "data": "-----BEGIN PGP MESSAGE-----\n\ny3J1AGlVuQBCRUdJTjpWQ0FSRA0KVkVSU0lPTjo0LjANCk46UGVyc29uO1Rlc3Qg\nT25seTs7Ow0KVEVMO1RZUEU9Y2VsbDorMSA1NTUgMDEwMA0KTk9URTp0ZXN0LW9u\nbHkgbm90ZQ0KRU5EOlZDQVJEDQo=\n=cNpa\n-----END PGP MESSAGE-----",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwqsEARYIAF0FgmlVuQAJENrrm/1CnN5ANRQAAAAAABwAEHNhbHRAbm90YXRpb25z\nLm9wZW5wZ3Bqcy5vcmf9+Jm2DpBQJLOKmo5A3ENPFiEEEhReoct7ACkPlcjH2uub\n/UKc3kAAANgiAP0dVqhpVINnhwHzevoQ9pqFkCfxd6Cr8bX7JLczfaH4FwEA9VEJ\nugYbWkmyeDY5mtx/HqqF0DBk1YYPgQjnruO4+Q0=\n=Xggo\n-----END PGP SIGNATURE-----"
+        }
+      ]
+    }
+  ]
+}
