@@ -6,8 +6,8 @@ contacts, so security reports are welcome.
 ## Reporting a vulnerability
 
 Use GitHub's private vulnerability reporting: this repository's **Security**
-tab → **Report a vulnerability**. Please don't open a public issue, and don't
-include real credentials or contact data in the report.
+tab → **Report a vulnerability**. Please don't report it anywhere public, and
+don't include real credentials or contact data in the report.
 
 This is a personal project: there is no bounty and no promised response time.
 Only the latest release gets fixes.

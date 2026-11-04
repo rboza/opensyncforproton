@@ -10,6 +10,13 @@ unofficial API, which can change at any time and break it. It is made for its
 author's own phone (a Pixel on GrapheneOS); the repository is public, but the
 app isn't supported as a product. It comes with no warranty.
 
+## Contributing
+
+This is a personal project, shared as it is in case someone else finds it
+useful. Issues and pull requests aren't accepted, but you're welcome to fork
+it under the GPL (see [Licence](#licence)). Security problems: see
+[`SECURITY.md`](SECURITY.md).
+
 ## What it does
 
 - Logs in to one Proton account: password, two-factor code, mailbox password,
@@ -67,7 +74,7 @@ disagree, the one that owns it wins.
 | [sync.md](docs/sync.md) | Behaviour: accounts, dry run, the plan, writes, conflicts, deletion, scheduling, import |
 | [mapping.md](docs/mapping.md) | vCard ↔ Android field mapping and how uploads patch the vCard |
 | [architecture.md](docs/architecture.md) | Modules, storage, threading, security controls, diagnostics |
-| [releasing.md](docs/releasing.md) | Release steps, signing key, Pixel check |
+| [releasing.md](docs/releasing.md) | Release steps, signing key, Pixel check, GitHub settings |
 
 How changes are made: [`AGENTS.md`](AGENTS.md). Reporting a vulnerability:
 [`SECURITY.md`](SECURITY.md).

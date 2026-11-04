@@ -102,13 +102,14 @@ words on screen, the counts). Always start with the upgrade:
 **After:** the state the phone is left in, the clean-up done, and each
 step's result (passed as written, or what was seen instead).
 
-## Publishing on GitHub
+## GitHub settings
 
-The repository's first publication, each step approved on its own:
+The repository is shared for forking, not maintained for others (README §
+Contributing):
 
-1. Create the repository, push, and turn on **private vulnerability
-   reporting** (Settings → Security) for [`SECURITY.md`](../SECURITY.md).
-2. Add CI that runs `mise run check` on every pull request.
-3. Open issues for the open questions and deferred features, from the
-   planning notes kept in the maintainer's private history backup.
-4. Publish the current version's release (step 6).
+- Pull requests only from collaborators; CI runs `mise run check` on each
+  one and on every push to `main`.
+- Issues, discussions, wiki, and projects off. Open questions and deferred
+  features are kept in the maintainer's private notes.
+- **Private vulnerability reporting** on (Settings → Security), for
+  [`SECURITY.md`](../SECURITY.md).
