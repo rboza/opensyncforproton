@@ -104,11 +104,13 @@ step's result (passed as written, or what was seen instead).
 
 ## GitHub settings
 
-The repository is shared for forking, not maintained for others (README §
-Contributing):
+The repository is shared for forking, not maintained for others
+([README § Contributing](../README.md#contributing)):
 
 - Pull requests only from collaborators; CI runs `mise run check` on each
   one and on every push to `main`.
+- `main` can't be force-pushed or deleted, and takes only commits whose
+  `check` run passed. Release tags (`v*`) can't be moved or deleted.
 - Issues, discussions, wiki, and projects off. Open questions and deferred
   features are kept in the maintainer's private notes.
 - **Private vulnerability reporting** on (Settings → Security), for
